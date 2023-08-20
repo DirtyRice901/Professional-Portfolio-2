@@ -1,125 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-  background-color: aquamarine;
+    background-color: rgb(184, 202, 184);
+}
+:root {
+    --grey-text:var(--grey-text);
+    --dark-grey:var(--dark-grey);
+    --mid-grey:var(--mid-grey);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #0b0b0c;
-    color: aquamarine;
-}
 
-h1 {
-    font-size: 75px   
-}
 
-    
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-  }
-  
-  nav a {
-    color: aquamarine;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: burlywood;
-  }
-
-p {
-    font-size: 16px;
-}
-
-.hero {
-    height: 800px;
+.nav-bar {
+    position: absolute;
+    z-index: 2;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Ubuntu', sans-serif;  
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color: rgba(131, 150, 122, 0.429);
+}
+
+li a {
+    display: block;
+    color: #0a0a0ac1;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#name {
+    color: var(--grey-text);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Hero section */
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    background-image: url(/assets/images/gas\ mask.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0vh;
+    animation: scale 15s;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    left: 0;
+    background: rgb(0, 0, 0, 0.425);
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 10%;  
+    font-size: 25px;
+    color: blanchedalmond;
+    text-transform: uppercase;
+}
+
+.kevinRice {
+    color: rgb(241, 241, 164);
+}
+
+/* projects container */
+.projects-container {
+    width: 100%;
+    height: auto;
+}
+
+.project-header {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.project-1 {
+    width: 400px;
+    height: 400px;
+    background: rgb(241, 241, 164);
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/assets/images/film-reel.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+.bootcamp-project {
+    width: 400px;
+    height: 400px;
+    background: rgb(241, 241, 164);
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/assets/images/digital-marketing-meeting.jpg);
     background-size: cover;
     background-position: center;
 }
 
-main {
-    display: flex;
-    flex: 1 1 0;
-    flex-direction: column;
-    max-width: 96%;
-    margin: 2%;
+.bootcamp-2-project {
+    width: 400px;
+    height: 400px;
+    background: rgb(201, 205, 199);
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/assets/images/online-reputation-management.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.about-me {
-    border-bottom: 1px solid color black;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(82, 53, 14);
-}
-
-.about-me h2 {
-    border: 4px;
-    font-size: 48px;
-    margin: 4%;
-    float: left;
-    padding-left: 4em;
-    padding-right: 8em;
-    text-align: left;
-    flex-basis: 90%;
-}
-
-.about-me p {
+.text-container {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(206, 209, 207, 0.812);
     overflow: hidden;
-    font-size: 20px;
-    flex-basis: 90%;    
 }
 
-.column {
-    float: right;
-    width: 33.33%;
-    padding: 5px;
-}
-.work {
-    display: table;
-    color: rgb(82, 53, 14);
+.text-container:hover {
+    height: 250px;
 }
 
-.work h2 {
-    margin: 4%;
-    float: left;
-    padding-left: 4em;
-    padding-right: 8em;
-    text-align: center;
-    flex-basis: 90%;
-    font-size: 48px;
+.name {
+    margin-top: 10px;
+    color: rgb(53, 63, 53);
+    font-size: 2rem;
 }
 
-.contact-me img {
-    max-height: 200px;
+.content {
+    padding: 25px 0;
+    color: rgba(46, 52, 43, 0.896);
+}
+
+.button {
+    border: 5px solid rgba(46, 52, 43, 0.429);
+    width: 160px;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-bottom: 50px;
+    background-color: rgb(41, 44, 41);
+}
+
+.about-text {
+    height: auto;
+    width: 30%;
+    font-size: 1.5rem;
+    margin-block: 100px;
+    text-align: left;
+    color: rgb(241, 241, 164);
+}
+
+h3 {
+    color: rgb(241, 241, 164);
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.802);
+    font-size: 30px;  
     
 }
 
-.contact-me h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+.contact-links a {
+    display: block;
+    color: rgb(241, 241, 164);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
-
-
-
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  
-    main {
-      max-width: 1200px;
-    }
-  }
