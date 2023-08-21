@@ -66,7 +66,7 @@ li a {
 
 .image-container {
     position: relative;
-    background-image: url(/assets/images/gas\ mask.jpg);
+    background-image: url(./assets/images/gas\ mask.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -140,7 +140,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(/assets/images/film-reel.png);
+    background-image: url(./assets/images/film-reel.png);
     background-size: cover;
     background-position: center;
     
@@ -156,7 +156,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(/assets/images/digital-marketing-meeting.jpg);
+    background-image: url(./assets/images/digital-marketing-meeting.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -169,7 +169,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(/assets/images/online-reputation-management.jpg);
+    background-image: url(./assets/images/online-reputation-management.jpg);
     background-size: cover;
     background-position: center;
 }
