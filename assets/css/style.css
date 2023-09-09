@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(184, 202, 184);
+    background-color: rgb(179, 199, 179);
 }
 :root {
     --grey-text:var(--grey-text);
@@ -15,12 +15,12 @@ body {
     --mid-grey:var(--mid-grey);
 }
 
-
-
 .nav-bar {
     position: absolute;
     z-index: 2;
     width: 100%;
+    
+    
 }
 
 html {
@@ -28,9 +28,7 @@ html {
     font-family: 'Ubuntu', sans-serif;  
 }
 
-a {
-    text-decoration: none;
-}
+
 
 ul {
     display: flex;
@@ -39,24 +37,26 @@ ul {
     padding: 0 10%;
     list-style: none;
     height: 10vh;
-    background-color: rgba(131, 150, 122, 0.429);
+    
 }
 
 li a {
     display: block;
-    color: #0a0a0ac1;
+    color: rgba(241, 241, 164, 0.624);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
-#name {
-    color: var(--grey-text);
+/* #nav {
+    background-color: transparent;
     font-size: 30px;
     font-weight: bold;
+} */
+
+/* /////////////////Begin Hero section////////////////////////////// */
+#hero {
+    background-color: transparent;
 }
-
-/* Hero section */
-
 .container {
     position: relative;
     height: 100vh;
@@ -68,15 +68,17 @@ li a {
     position: relative;
     background-image: url(./assets/images/gas\ mask.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     height: 100%;
     width: 100%;
     margin-top: 0vh;
-    animation: scale 15s;
+    animation: scale 10s;
 }
 @keyframes scale {
     0% {
-        transform: scale(1.5);
+        transform: scale(1.82
+        
+        );
     }
     100% {
         transform: scale(1);
@@ -84,7 +86,7 @@ li a {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     top: 0; 
@@ -100,8 +102,8 @@ li a {
     flex-direction: column;
     position: absolute;
     top: 35%;
-    left: 10%;  
-    font-size: 25px;
+    left: 5%;  
+    font-size: 68%;
     color: blanchedalmond;
     text-transform: uppercase;
 }
@@ -110,6 +112,18 @@ li a {
     color: rgb(241, 241, 164);
 }
 
+.about-text {
+    height: auto;
+    width: 34%;
+    font-size: .7rem;
+    margin-block: 5px;
+    text-align: left;
+    color: rgb(241, 241, 164);
+    font-style: italic;
+    flex-direction: column;
+    
+}
+/* /////////////////////////end of Hero Section///////////////////// */
 /* projects container */
 .projects-container {
     width: 100%;
@@ -140,7 +154,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(./assets/images/film-reel.png);
+    background-image: url(/assets/images/film-reel.png);
     background-size: cover;
     background-position: center;
     
@@ -156,7 +170,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(./assets/images/digital-marketing-meeting.jpg);
+    background-image: url(/assets/images/digital-marketing-meeting.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -169,7 +183,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 50px;
-    background-image: url(./assets/images/online-reputation-management.jpg);
+    background-image: url(/assets/images/online-reputation-management.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -205,23 +219,19 @@ li a {
     width: 160px;
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: auto;
     background-color: rgb(41, 44, 41);
-}
-
-.about-text {
-    height: auto;
-    width: 30%;
-    font-size: 1.5rem;
-    margin-block: 100px;
-    text-align: left;
-    color: rgb(241, 241, 164);
 }
 
 h3 {
     color: rgb(241, 241, 164);
 }
 
+.contact-container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
 .contact-links {
     display: flex;
     align-items: center;
@@ -229,14 +239,14 @@ h3 {
     padding: 0 10%;
     list-style: none;
     height: 10vh;
-    background-color: rgba(0, 0, 0, 0.802);
+    background-color: rgba(0, 0, 0, 0.79);
     font-size: 30px;  
     
 }
 
 .contact-links a {
     display: block;
-    color: rgb(241, 241, 164);
+    color: rgba(241, 241, 164, 0.624);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
